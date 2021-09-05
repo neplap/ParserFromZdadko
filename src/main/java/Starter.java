@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.util.LinkedList;
 
 public class Starter {
-    public static void main(String[] args) throws IOException {
+    public void main(String[] args) throws IOException {
 
         LinkedList<String> listlinks = new LinkedList<>();
 

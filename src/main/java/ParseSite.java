@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class ParseSite {
-    public static ArrayList<ParsedData> parseSiteApp(String listLinks) throws IOException {
+    public ArrayList<ParsedData> parseSiteApp(String listLinks) throws IOException {
 
         Document page = Jsoup.connect(listLinks + "/modules.php?name=sud_delo&op=rd&delo_table=G1_DOCUMENT&delo_id=1540005").timeout(5000).get();
         Elements linksNumbersElements = page.select(".lawcase-number-td a");
